@@ -84,6 +84,11 @@ class ViewController: UIViewController, WKNavigationDelegate {
         }
 
         decisionHandler(.cancel)
+        
+        let al = UIAlertController(title: "Sorry", message: "It's blocked", preferredStyle: .alert)
+        al.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        present(al, animated: true)
+        
     }
 }
 
